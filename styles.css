@@ -320,3 +320,34 @@ ul, li {
      * This applies the point color to the icons when interacting with links (computer: mouse over, mobile: press and hold).
     */
 }
+/* 링크 묶음 (SNS / 게임 / 앱 서비스) */
+.linkGroup + .linkGroup {
+    margin-top: 1.4em;
+}
+.groupTitle {
+    font-family: var(--point-font);
+    font-size: 15px;
+    font-weight: 400;
+    color: #8C7EAF;
+    text-align: left;
+    margin: 0 0 0.5em 1.1em;
+}
+.linkArea_normalList ul li.soon span {
+    display: block;
+    color: #aaa;
+    cursor: default;
+}
+.linkArea_normalList ul li.soon span i {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbb;
+}
+.linkArea_normalList ul li.soon em {
+    font-style: normal;
+    font-size: 0.75em;
+    margin-left: 0.6em;
+    padding: 0.1em 0.6em;
+    border-radius: 1em;
+    background: #eee;
+    color: #999;
+}
