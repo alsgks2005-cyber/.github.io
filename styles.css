@@ -393,9 +393,7 @@ ul, li {
     line-height: 1.35;
 }
 .linkArea_normalList ul li.svc .svcText small {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    word-break: keep-all;
     font-size: 0.78em;
     color: #888;
     line-height: 1.4;
