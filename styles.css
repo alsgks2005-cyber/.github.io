@@ -351,3 +351,76 @@ ul, li {
     background: #eee;
     color: #999;
 }
+
+/* 서비스 항목: 왼쪽 사진(없으면 아이콘) + 이름 + 한 줄 설명 (2026-11-12 추가) */
+.linkArea_normalList ul li.svc {
+    padding: 0.6em 0.9em;
+}
+.linkArea_normalList ul li.svc .svcRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+.linkArea_normalList ul li.svc .svcThumb {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #F1EEF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.linkArea_normalList ul li.svc .svcThumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.linkArea_normalList ul li.svc .svcThumb i {
+    margin: 0;
+    color: #8C7EAF;
+}
+.linkArea_normalList ul li.svc .svcText {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+.linkArea_normalList ul li.svc .svcText strong {
+    font-weight: 700;
+    line-height: 1.35;
+}
+.linkArea_normalList ul li.svc .svcText small {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.78em;
+    color: #888;
+    line-height: 1.4;
+}
+.linkArea_normalList ul li.svc.soon .svcRow {
+    color: #aaa;
+    cursor: default;
+}
+.linkArea_normalList ul li.svc.soon .svcThumb i {
+    color: #bbb;
+}
+.linkArea_normalList ul li.svc.soon .svcText small {
+    color: #aaa;
+}
+.linkArea_normalList ul li.svc.soon em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    padding: 0.1em 0.6em;
+    border-radius: 1em;
+    background: #eee;
+    color: #999;
+    vertical-align: middle;
+}
+.linkArea_normalList ul li.svc a.svcRow:hover .svcText small {
+    color: #8C7EAF;
+}
